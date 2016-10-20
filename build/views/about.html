@@ -1,0 +1,52 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#homeNav" class="navbar-toggle">&#9776;</button><a ui-sref="home" class="navbar-brand"> <span> <img src="../images/gardener.svg" height="30px"/></span><span class="logo-name">Lawn Care Providers</span></a>
+    </div>
+    <div id="homeNav" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ui-sref-active="active"><a ui-sref="about" class="nav-link">About</a></li>
+        <li ui-sref-active="active"><a ui-sref="services" class="nav-link">Services</a></li>
+        <li ui-sref-active="active"><a ui-sref="contact" class="nav-link">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a ui-sref="signup"><span class="glyphicon glyphicon-user">Sign Up</span></a></li>
+        <li class="dropdown"><a href="" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-log-in">Login</span><span class="caret"></span></a>
+          <ul id="login-dp" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">Login via
+                  <div class="social-buttons"><a href="/api/auth/facebook" class="btn btn-fb"> <i class="fa fa-facebook"> </i><span> Facebook </span></a>
+                    <!--button   --><a href="/api/auth/google" class="btn btn-tw"><i class="fa fa-google"> </i><span> Google</span></a>
+                  </div>
+                  <p>or</p>
+                  <form role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav" class="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail2" class="sr-only">Email address</label>
+                      <input type="email" id="exampleInputEmail2" placeholder="Email address" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword2" class="sr-only">Password</label>
+                      <input type="password" id="exampleInputPassword2" placeholder="Password" required="required" class="form-control"/>
+                      <div class="help-block text-right"><a href="#">Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"/><span>keep me logged-in</span>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div class="bottom text-center"><span>New here ? </span><a href="#"><b>Join Us</b></a></div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

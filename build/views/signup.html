@@ -1,0 +1,94 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#homeNav" class="navbar-toggle">&#9776;</button><a ui-sref="home" class="navbar-brand"> <span> <img src="../images/gardener.svg" height="30px"/></span><span class="logo-name">Lawn Care Providers</span></a>
+    </div>
+    <div id="homeNav" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ui-sref-active="active"><a ui-sref="about" class="nav-link">About</a></li>
+        <li ui-sref-active="active"><a ui-sref="services" class="nav-link">Services</a></li>
+        <li ui-sref-active="active"><a ui-sref="contact" class="nav-link">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a ui-sref="signup"><span class="glyphicon glyphicon-user">Sign Up</span></a></li>
+        <li class="dropdown"><a href="" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-log-in">Login</span><span class="caret"></span></a>
+          <ul id="login-dp" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">Login via
+                  <div class="social-buttons"><a href="/api/auth/facebook" class="btn btn-fb"> <i class="fa fa-facebook"> </i><span> Facebook </span></a>
+                    <!--button   --><a href="/api/auth/google" class="btn btn-tw"><i class="fa fa-google"> </i><span> Google</span></a>
+                  </div>
+                  <p>or</p>
+                  <form role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav" class="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail2" class="sr-only">Email address</label>
+                      <input type="email" id="exampleInputEmail2" placeholder="Email address" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword2" class="sr-only">Password</label>
+                      <input type="password" id="exampleInputPassword2" placeholder="Password" required="required" class="form-control"/>
+                      <div class="help-block text-right"><a href="#">Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"/><span>keep me logged-in</span>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div class="bottom text-center"><span>New here ? </span><a href="#"><b>Join Us</b></a></div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav><br/>
+<div class="container">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="row myborder">
+      <h4 style="color: #7EB59E; margin: initial; margin-bottom: 10px;">Sign Up Now</h4>
+      <hr/>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+        <input size="60" maxlength="255" placeholder="User Name" name="UserRegistration[username]" id="UserRegistration_username" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+        <input size="60" maxlength="255" placeholder="Password" name="UserRegistration[password]" id="UserRegistration_password" type="password" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+        <input size="60" maxlength="255" placeholder="First Name" name="UserRegistration[fname]" id="UserRegistration_fname" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+        <input size="60" maxlength="255" placeholder="Last Name" name="UserRegistration[lname]" id="UserRegistration_lname" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+        <input size="60" maxlength="255" placeholder="Address" name="UserRegistration[address]" id="UserRegistration_address" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+        <input size="60" maxlength="50" placeholder="City" name="UserRegistration[city]" id="UserRegistration_city" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+        <input size="60" maxlength="25" placeholder="state" name="UserRegistration[state]" id="UserRegistration_state" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+        <input size="60" maxlength="5" placeholder="Zip" name="UserRegistration[zip]" id="UserRegistration_zip" type="text" class="form-control"/>
+      </div>
+      <div class="input-group margin-bottom-20"><span class="input-group-addon"><i class="glyphicon glyphicon-phone mycolor"></i></span>
+        <input size="60" maxlength="255" placeholder="Contact Number" name="UserRegistration[contactnumber]" id="UserRegistration_contactnumber" type="text" class="form-control"/>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button type="submit" class="btn-u pull-left">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

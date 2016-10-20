@@ -1,0 +1,140 @@
+
+<section> 
+  <div> 
+    <button class="btn btn-warning">Logout</button>
+  </div>
+  <div class="content">  
+    <div class="col-md-12 col-sm-12 col-xs-12 padding-right-30 padding-left-20">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
+        <div class="r4_counter wid-stats db_box">
+          <div class="stats-data"><i class="material-icons icon-primary pull-left">date_range</i>
+            <div class="stats">
+              <h3>Aug.28, 2016</h3><span>Next Service Date
+                <button class="btn btn-danger btn-sm">Change</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
+        <div class="r4_counter wid-stats db_box">
+          <div class="stats-data"><i class="material-icons icon-primary pull-left">account_balance</i>
+            <div class="stats">
+              <h3>$150.00</h3><span>Account Balance
+                <button class="btn btn-success btn-sm">Pay Now   </button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0">
+        <div class="r4_counter wid-stats db_box">
+          <div class="stats-data"><i class="material-icons icon-primary pull-left">people</i>
+            <div class="stats">
+              <h3>Yard 100</h3><span>Plan
+                <button class="btn btn-primary btn-sm">Change Plan </button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-9 col-md-12 col-xs-12 col-sm-12">
+    <section class="box ">
+      <header class="panel_header">
+        <h2 class="title pull-left">Client Profile Info                </h2>
+      </header>
+      <div class="content-body padding-bottom-0">
+        <div class="row">
+          <form action="#" method="get">
+            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+              <div class="form-group">
+                <label for="field-1" class="form-label">Name</label><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>John Doe</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-5" class="form-label">Date</label><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>{{users[0].dateAdded| date:"MM/dd/yyyy 'at' h:mma"}}</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-5" class="form-label">Company</label><span class="desc"></span><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>N/A</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-5" class="form-label">Service Address</label><span class="desc"></span><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>670 Post Road Drive Stone Mountain, GA 30088</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-1" class="form-label">Email</label><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>info@gmail.com</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-1" class="form-label">Phone Number</label><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>999-999-9999</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="field-1" class="form-label">Yard Specialist</label><span class="desc"></span>
+                <div id="field-1" class="form-control">
+                  <p>Dario Sumlin</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-3 col-xs-12 padding-bottom-30">
+              <h3>House</h3>
+              <h4>Front</h4>
+              <p>image</p>
+              <h4>Back</h4>
+              <p>image</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 padding-bottom-30">
+              <button class="btn btn-warning">Update Information</button>
+              <div class="text-left"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="col-lg-3 col-md-12 col-xs-12 col-sm-12">
+    <section class="box ">
+      <header class="panel_header">
+        <h2 class="title pull-left">Plan Details                </h2>
+      </header>
+      <div class="content-body padding-bottom-0">
+        <h4>Yard 100</h4>
+        <ul>
+          <li>Front Yard Cut</li>
+          <li>Back yard Cut</li>
+          <li>Edge</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
+    <section class="box ">
+      <header class="panel_header">
+        <h2 class="title pull-left">Add New Service Date                </h2>
+      </header>
+      <div class="content-body padding-bottom-0">
+        <p>Date of Service</p>
+        <datetimepicker data-ng-model="data.date"></datetimepicker>
+        <p>Type of Service</p>
+        <p>Special Request</p>
+        <p>Estimate</p>
+      </div>
+    </section>
+    <div>
+      <h3>price list / services</h3>
+    </div>
+  </div>
+</section>

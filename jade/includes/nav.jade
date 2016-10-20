@@ -1,0 +1,65 @@
+nav(class='navbar navbar-inverse')
+    .container-fluid
+        .navbar-header
+            button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#homeNav") &#9776;
+            
+            a(class='navbar-brand' ui-sref='home') 
+                span 
+                    img(src='../images/gardener.svg' height='30px')
+                span(class='logo-name') Lawn Care Providers
+
+                    
+        div(class='collapse navbar-collapse' id='homeNav')
+            ul(class='nav navbar-nav')
+                li(ui-sref-active='active')
+                    a(class='nav-link' ui-sref='about') About
+                li(ui-sref-active='active')
+                    a(class='nav-link' ui-sref='services') Services
+                li(ui-sref-active='active')
+                    a(class='nav-link' ui-sref='contact') Contact
+            ul(class="nav navbar-nav navbar-right")
+                li 
+                    a(ui-sref='signup')
+                        span(class="glyphicon glyphicon-user") Sign Up
+                li(class='dropdown')
+                    a(href="" class="dropdown-toggle" data-toggle="dropdown")
+                        span(class="glyphicon glyphicon-log-in") Login
+                        span(class='caret')
+                    ul(id='login-dp' class='dropdown-menu')
+                        li
+                            div(class='row')
+                                div(class='col-md-12') Login via
+                                    div(class='social-buttons')
+                                        a(href="/api/auth/facebook" class="btn btn-fb") 
+                                            i(class="fa fa-facebook") 
+                                            span  Facebook 
+                                         //button   
+                                        a(href="/api/auth/google" class="btn btn-tw")
+                                            i(class="fa fa-google") 
+                                            span  Google
+                                    p or
+                                    form(class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav")
+                                        div(class="form-group")
+                                             label(class="sr-only" for="exampleInputEmail2") Email address
+                                             input(type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required)
+
+                                        div(class="form-group")
+                                             label(class="sr-only" for="exampleInputPassword2") Password
+                                             input(type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required)
+                                             div(class="help-block text-right")
+                                                 a(href="#") Forget the password ?
+
+                                        div(class="form-group")
+                                             button(type="submit" class="btn btn-primary btn-block") Sign in
+
+                                        div(class="checkbox")
+                                            label
+                                                input(type="checkbox") 
+                                                span keep me logged-in
+
+
+                                div(class="bottom text-center")
+                                    span New here ? 
+                                    a(href="#")
+                                        b Join Us
+

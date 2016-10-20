@@ -1,0 +1,123 @@
+section 
+    div 
+        button(class='btn btn-warning') Logout
+    div(class='content')   
+        div(class="col-md-12 col-sm-12 col-xs-12 padding-right-30 padding-left-20")
+            div(class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0")
+                div(class="r4_counter wid-stats db_box")
+                    div(class='stats-data')
+
+                        i(class="material-icons icon-primary pull-left") date_range
+                        div(class="stats")
+                            h3 Aug.28, 2016
+                            span Next Service Date
+                                button(class='btn btn-danger btn-sm') Change
+
+            div(class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0")
+                div(class="r4_counter wid-stats db_box")
+                    div(class='stats-data')
+                        i(class="material-icons icon-primary pull-left") account_balance
+                        div(class="stats")
+                            h3 $150.00
+                            span Account Balance
+                                button(class='btn btn-success btn-sm') Pay Now   
+
+            div(class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-0 padding-left-0")
+                div(class="r4_counter wid-stats db_box")
+                    div(class='stats-data')
+                        i(class="material-icons icon-primary pull-left") people
+                        div(class="stats")
+                            h3 Yard 100
+                            span Plan
+                                button(class='btn btn-primary btn-sm') Change Plan 
+
+    
+    div(class="col-lg-9 col-md-12 col-xs-12 col-sm-12")
+            section(class="box ")
+                header(class="panel_header")
+                    h2(class="title pull-left") Client Profile Info                
+                div(class="content-body padding-bottom-0")
+                    div(class="row")
+                        form(action ="#" method="get")
+                            div(class="col-lg-8 col-md-8 col-sm-9 col-xs-12")
+                                div(class="form-group")
+                                    label(class="form-label" for="field-1") Name
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p John Doe
+
+                                div(class="form-group")
+                                    label(class="form-label" for="field-5") Date
+
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p {{users[0].dateAdded| date:"MM/dd/yyyy 'at' h:mma"}}
+
+                                div(class="form-group")
+                                    label(class="form-label" for="field-5") Company
+                                    span(class="desc")
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p N/A
+
+                                div(class="form-group")
+                                    label(class="form-label" for="field-5") Service Address
+                                    span(class="desc")
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p 670 Post Road Drive Stone Mountain, GA 30088
+
+                                div(class="form-group")
+                                    label(class="form-label" for="field-1") Email
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p info@gmail.com
+
+                                div(class="form-group")
+                                    label(class="form-label" for="field-1") Phone Number
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p 999-999-9999
+
+                                div(class="form-group")
+                                    label(class="form-label" for="field-1") Yard Specialist
+                                    span(class="desc")
+                                    div(class="form-control" id="field-1")
+                                        p Dario Sumlin
+
+                            div(class='col-lg-3 col-lg-offset-1 col-md-3 col-sm-3 col-xs-12 padding-bottom-30')
+                                h3 House
+                                h4 Front
+                                p image
+                                h4 Back
+                                p image
+                            div(class="col-lg-8 col-md-8 col-sm-9 col-xs-12 padding-bottom-30")
+                                button(class='btn btn-warning') Update Information
+                                div(class="text-left")
+
+
+
+        div(class="col-lg-3 col-md-12 col-xs-12 col-sm-12")
+            section(class="box ")
+                header(class="panel_header")
+                    h2(class="title pull-left") Plan Details                
+                div(class="content-body padding-bottom-0")
+                    h4 Yard 100
+                    ul
+                        li Front Yard Cut
+                        li Back yard Cut
+                        li Edge
+                        
+        div(class="col-lg-4 col-md-12 col-xs-12 col-sm-12")
+            section(class="box ")
+                header(class="panel_header")
+                    h2(class="title pull-left") Add New Service Date                
+                div(class="content-body padding-bottom-0")
+                    p Date of Service
+                    datetimepicker(data-ng-model="data.date")
+    
+                    p Type of Service
+                    p Special Request
+                    p Estimate
+            div
+                h3 price list / services
